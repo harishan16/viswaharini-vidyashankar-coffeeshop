@@ -1,0 +1,180 @@
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+/* HERO STYLING */
+.hero {
+  background-color: $nitro-pink;
+  height: 85vh;
+  @include flex-box;
+  
+  &__column-one {
+    width: 60%;
+  }
+  &__definition {
+    width: 52%;
+    letter-spacing: -0.03rem;
+  }
+  &__image {
+    height: 27rem;
+  }
+}
+
+/* OUR PRODUCTS STYLING */
+.product-display {
+  background-color: $light-gray;
+  text-align: center;
+
+  &__title {
+    padding: 2.5rem 0;
+  }
+  &__container {
+    @include flex-box;
+  }
+  &__button--view-all {
+    margin: 2.5rem 0;
+  }
+}
+
+.item {
+  background-color: $white;
+  width: 17.5rem;
+  height: 23.75rem;
+  margin: 0 2.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+  
+  &__image-container {
+    padding: 1.5rem;
+  }
+
+  &__image {
+    height: 13rem;
+  }
+
+  &__information {
+    background-color: $nitro-pink;
+    border-radius: 0 0 0.625rem 0.625rem;
+    @include flex-box;
+    justify-content: space-evenly;
+    height: 7.5rem;
+  }
+
+  &__name-wrapper {
+  text-align: left;
+  }
+
+  &__name{
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    margin: 0;
+    color: $gray;
+  }
+
+  &__pricing--highlight {
+  @include font-size-weight (1.5rem, 700);
+  }
+}
+
+// PRODUCT SOURCING STYLING
+.sourcing {
+  @include flex-box;
+  margin: 6.25rem 0;
+}
+.sourcing-info {
+  width: 52%;
+
+  &__description {
+    width: 65%;
+    letter-spacing: -0.03rem;
+  }
+
+  &__icons-conatiner {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+  }
+}
+
+.sourcing-info__icon {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.sourcing-image {
+  position: relative;
+
+  &__background {
+    width: 22rem;
+  }
+
+  &__featured {
+    @include absolute-positioning (10%, 30%);
+  }
+}
+
+// DISCOUNT BANNER STYLING
+.discount {
+  background-color: $graphite;
+  width: 80%;
+  margin: 10rem auto;
+
+  &__text {
+    text-align: center;
+    @include font-size-weight (2.5rem, 400);
+    color: $white;
+    padding: 1.875rem;
+    margin: 0;
+
+    &--highlight {
+      font-weight: 700;
+    }
+  }
+}
+
+/* FOOTER STYLING*/
+.footer {
+  background-color: $nitro-pink;
+  @include flex-box;
+  justify-content: space-evenly;
+  height: 12.5rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &__left-icon {
+    opacity: 25%;
+    width: 5.5rem;
+    @include absolute-positioning (10%, -2%);
+  }
+
+  &__right-icon {
+    @extend .footer__left-icon;
+    @include absolute-positioning (47%, 96%);
+}
+}
+
+.footer-column {
+  padding: 0 5rem;
+
+  &__heading {
+    margin: 1rem 0;
+  }
+
+  &__content {
+    margin: 0;
+    font-size: 1rem;
+
+    &--highlight {
+      font-weight: 700;
+    }
+  }
+
+  &__social-icons {
+    width: 2.75rem;
+  }
+}
+

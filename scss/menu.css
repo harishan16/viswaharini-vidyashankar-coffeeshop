@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html{
+  font-size: 62.5%;
+
+} */
+/* body {
+  font-size: 1.6rem;
+} */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #393939;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.item__pricing, .sub-item__pricing {
+  color: #5bacc3;
+  margin: 0;
+}
+
+.hero__button, .product-display__button, .sourcing-info__button {
+  background-color: #5bacc3;
+  width: 10rem;
+  padding: 1rem;
+  color: #fff;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+/* HEADER STYLING*/
+.header {
+  background-color: #fff0ed;
+}
+
+/* NAVIGATION STYLING */
+.navigation {
+  height: 6.25rem;
+}
+.navigation__logo {
+  width: 3.125rem;
+  margin: 1rem 0.625rem -0.25rem 1rem;
+  display: inline;
+}
+.navigation__title-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+}
+.navigation__title {
+  display: inline-block;
+}
+.navigation__nav-list {
+  float: right;
+  margin: 2.5rem 1rem 0 0;
+  display: inline;
+}
+.navigation__list-item {
+  list-style-type: none;
+  font-size: 1.25rem;
+  display: inline;
+  padding: 0.75rem;
+}
+.navigation__links {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.navigation__links:hover {
+  color: #5bacc3;
+}
+.navigation__links--current {
+  color: #5bacc3;
+}
+
+.banner {
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-box {
+  width: 14.375rem;
+  height: 8.75rem;
+  background-color: #393939;
+  position: relative;
+}
+.menu-box__detail {
+  width: 100%;
+  outline: 5px solid #5bacc3;
+  outline-offset: -0.313rem;
+  position: absolute;
+  top: -0.75rem;
+  left: -0.75rem;
+}
+.menu-box__title {
+  text-align: center;
+  color: #fff;
+  line-height: 8.75rem;
+}
+
+/* SUB NAVIGATION STYLING */
+.sub-navigation {
+  width: 100%;
+  background-color: #393939;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+.navigation-list__item {
+  list-style-type: none;
+  display: inline;
+  padding: 0 1.25rem;
+  border-left: 4px solid #5bacc3;
+}
+.navigation-list__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MENU ITEMS STYLING */
+.menu__title,
+.sub-item__title,
+.sub-item__description,
+.sub-item__pricing {
+  text-align: center;
+}
+
+.menu__item {
+  padding: 1.25rem 0;
+}
+
+.menu__item--one, .menu__item--three {
+  background-color: #fff0ed;
+}
+
+.menu__item--two {
+  background-color: #f7f7f7;
+}
+
+.sub-item {
+  margin-top: 1.25rem;
+}
+.sub-item__container {
+  width: 38%;
+  margin: auto;
+}
+.sub-item__description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html{
+  font-size: 62.5%;
+
+} */
+/* body {
+  font-size: 1.6rem;
+} */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #393939;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.item__pricing, .sub-item__pricing {
+  color: #5bacc3;
+  margin: 0;
+}
+
+.hero__button, .product-display__button, .sourcing-info__button {
+  background-color: #5bacc3;
+  width: 10rem;
+  padding: 1rem;
+  color: #fff;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+/* HEADER STYLING*/
+.header {
+  background-color: #fff0ed;
+}
+
+/* NAVIGATION STYLING */
+.navigation {
+  height: 6.25rem;
+}
+.navigation__logo {
+  width: 3.125rem;
+  margin: 1rem 0.625rem -0.25rem 1rem;
+  display: inline;
+}
+.navigation__title-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+}
+.navigation__title {
+  display: inline-block;
+}
+.navigation__nav-list {
+  float: right;
+  margin: 2.5rem 1rem 0 0;
+  display: inline;
+}
+.navigation__list-item {
+  list-style-type: none;
+  font-size: 1.25rem;
+  display: inline;
+  padding: 0.75rem;
+}
+.navigation__links {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.navigation__links:hover {
+  color: #5bacc3;
+}
+.navigation__links--current {
+  color: #5bacc3;
+}
+
+/* HERO STYLING */
+.hero {
+  background-color: #fff0ed;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__column-one {
+  width: 60%;
+}
+.hero__definition {
+  width: 52%;
+  letter-spacing: -0.03rem;
+}
+.hero__image {
+  height: 27rem;
+}
+
+/* OUR PRODUCTS STYLING */
+.product-display {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.product-display__title {
+  padding: 2.5rem 0;
+}
+.product-display__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-display__button--view-all {
+  margin: 2.5rem 0;
+}
+
+.item {
+  background-color: #fff;
+  width: 17.5rem;
+  height: 23.75rem;
+  margin: 0 2.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+}
+.item__image-container {
+  padding: 1.5rem;
+}
+.item__image {
+  height: 13rem;
+}
+.item__information {
+  background-color: #fff0ed;
+  border-radius: 0 0 0.625rem 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 7.5rem;
+}
+.item__name-wrapper {
+  text-align: left;
+}
+.item__name {
+  font-size: 1.5rem;
+}
+.item__description {
+  margin: 0;
+  color: #909090;
+}
+.item__pricing--highlight {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sourcing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6.25rem 0;
+}
+
+.sourcing-info {
+  width: 52%;
+}
+.sourcing-info__description {
+  width: 65%;
+  letter-spacing: -0.03rem;
+}
+.sourcing-info__icons-conatiner {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.sourcing-info__icon {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.sourcing-image {
+  position: relative;
+}
+.sourcing-image__background {
+  width: 22rem;
+}
+.sourcing-image__featured {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+.discount {
+  background-color: #393939;
+  width: 80%;
+  margin: 10rem auto;
+}
+.discount__text {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1.875rem;
+  margin: 0;
+}
+.discount__text--highlight {
+  font-weight: 700;
+}
+
+/* FOOTER STYLING*/
+.footer {
+  background-color: #fff0ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 12.5rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.footer__left-icon, .footer__right-icon {
+  opacity: 25%;
+  width: 5.5rem;
+  position: absolute;
+  top: 10%;
+  left: -2%;
+}
+.footer__right-icon {
+  position: absolute;
+  top: 47%;
+  left: 96%;
+}
+
+.footer-column {
+  padding: 0 5rem;
+}
+.footer-column__heading {
+  margin: 1rem 0;
+}
+.footer-column__content {
+  margin: 0;
+  font-size: 1rem;
+}
+.footer-column__content--highlight {
+  font-weight: 700;
+}
+.footer-column__social-icons {
+  width: 2.75rem;
+}/*# sourceMappingURL=landing.css.map */

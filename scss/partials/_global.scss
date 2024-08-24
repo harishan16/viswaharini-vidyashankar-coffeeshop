@@ -1,0 +1,102 @@
+    @use 'variables' as *;
+    @use "../partials/mixins" as *;
+
+    * {
+      box-sizing: border-box;
+    }
+    /* html{
+      font-size: 62.5%;
+
+    } */
+    /* body {
+      font-size: 1.6rem;
+    } */
+    body {
+      font-family: $font-family;
+      font-weight: 400;
+      color: $graphite;
+      margin: 0;
+    }
+
+    h1,
+    h2 {
+      @include font-size-weight (3rem, 300);
+      margin: 0;
+    }
+
+    h3 {
+      @include font-size-weight (2rem, 300);
+      margin: 0;
+    }
+
+    p {
+      @include font-size-weight (1.125rem, 400);
+    }
+
+    .item__pricing, .sub-item__pricing {
+      color: $nitro-blue;
+      margin: 0;
+    }
+
+    .hero__button, .product-display__button, .sourcing-info__button {
+      background-color: $nitro-blue;
+      width: 10rem;
+      padding: 1rem;
+      color: $white;
+      border: none;
+      @include font-size-weight (1.125rem, 400);
+      cursor: pointer;
+      position: relative;
+    }
+
+    /* HEADER STYLING*/
+    .header {
+      background-color:$nitro-pink;
+    }
+
+    /* NAVIGATION STYLING */
+    .navigation {
+          height: 6.25rem;
+        
+          &__logo {
+            width: 3.125rem;
+            margin: 1rem 0.625rem -0.25rem 1rem;
+          display: inline;
+          }
+        
+          &__title-link {
+            text-decoration: none;
+            color: inherit;
+          display: inline;
+        }
+        
+          &__title {
+            display: inline-block;
+          }
+        
+          &__nav-list {
+            float: right;
+            margin: 2.5rem 1rem 0 0;
+            display: inline;
+          }
+
+          &__list-item {
+            list-style-type: none;
+            font-size: 1.25rem;
+            display: inline;
+            padding: 0.75rem;
+          }
+          &__links {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+
+          &:hover {
+            color: $nitro-blue;
+          }
+
+          &--current {
+            color: $nitro-blue;
+          }
+          }  
+    }
