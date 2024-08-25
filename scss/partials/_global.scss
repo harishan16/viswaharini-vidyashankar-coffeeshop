@@ -1,132 +1,122 @@
-    @use 'variables' as *;
-    @use "../partials/mixins" as *;
+  @use 'variables' as *;
+  @use "../partials/mixins" as *;
 
-    * {
-      box-sizing: border-box;
-    }
-    /* html{
-      font-size: 62.5%;
-
-    } */
-    /* body {
-      font-size: 1.6rem;
-    } */
-    body {
-      font-family: $font-family;
-      font-weight: 400;
-      color: $graphite;
-      margin: 0;
-    }
-
-    h1,
-    h2 {
-      @include font-size-weight (3rem, 300);
-      margin: 0;
-    }
-
-    h3 {
-      @include font-size-weight (2rem, 300);
-      margin: 0;
-    }
-
-    p {
-      @include font-size-weight (1.125rem, 400);
-    }
-
-    .item__pricing, .sub-item__pricing {
-      color: $nitro-blue;
-      margin: 0;
-    }
-
-    .button-container {
-      background-color: $nitro-blue;
-      position: relative;
-      width: 8.75rem;
-      height: 2.7rem;
-      cursor:pointer;
-  
-      &__button {
-        width: 100%;
-        text-align: center;
-        outline: 0.125rem solid $graphite;
-        outline-offset: -0.125rem;
-        @include absolute-positioning (-0.25rem, -0.25rem);
-        transition: top, left;
-
-        &:active {
-          top: 0;
-          left: 0;
-        }
-      }
-
-      &--view-all {
-        margin:2.5rem auto;
-      }
-
-      &--shop-now {
-        margin: 1.6875rem 0 0 0.3125rem;
-      }
-
-      &--learn-more {
-        margin: 1.875rem 0 0 0.25rem;
-      }
-
-      &__title {
-        color: $white;
-        display: block;
-        line-height: 2.7rem;
-        text-decoration: none;
-        font-size: 1.125rem;
-      }
+  * {
+    box-sizing: border-box;
   }
-    /* HEADER STYLING*/
-    .header {
+
+  body {
+    font-family: $font-family;
+    font-weight: 400;
+    color: $graphite;
+    margin: 0;
+  }
+
+  h1,
+  h2 {
+    @include font-size-weight (3rem, 300);
+  }
+
+  h3 {
+    @include font-size-weight (2rem, 300);
+  }
+
+  p {
+    @include font-size-weight (1.125rem, 400);
+  }
+
+  h1, h2, h3 {
+    margin:0;
+  }
+
+  .item__pricing, .sub-item__pricing {
+    color: $nitro-blue;
+    margin: 0;
+  }
+
+  // PRIMARY BUTTON STYLING
+  .button-container {
+    background-color: $nitro-blue;
+    position: relative;
+    width: 8.75rem;
+    height: 2.7rem;
+    cursor:pointer;
+
+    &__button {
+      width: 100%;
+      text-align: center;
+      outline: 0.125rem solid $graphite;
+      outline-offset: -0.125rem;
+      @include absolute-positioning (-0.25rem, -0.25rem);
+      transition: top, left;
+
+      &:active {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--view-all {
+      margin:2.5rem auto;
+    }
+
+    &--shop-now {
+      margin: 1.6875rem 0 0 0.3125rem;
+    }
+
+    &--learn-more {
+      margin: 1.875rem 0 0 0.25rem;
+    }
+
+    &__title {
+      color: $white;
+      display: block;
+      line-height: 2.7rem;
+      text-decoration: none;
+      font-size: 1.125rem;
+    }
+  }
+
+  /* HEADER STYLING*/
+  .header {
       background-color:$nitro-pink;
-    }
+  }
 
-    /* NAVIGATION STYLING */
-    .navigation {
-          height: 6.25rem;
+  /* NAVIGATION STYLING */
+  .navigation {
+  height: 6.25rem;
         
-          &__logo {
-            width: 3.125rem;
-            margin: 1rem 0.625rem -0.25rem 1rem;
-          display: inline;
-          }
-        
-          &__title-link {
-            text-decoration: none;
-            color: inherit;
-          display: inline;
-        }
-        
-          &__title {
-            display: inline-block;
-          }
-        
-          &__nav-list {
-            float: right;
-            margin: 2.5rem 1rem 0 0;
-            display: inline;
-          }
+  &__logo {
+    width: 3.125rem;
+    margin: 1rem 0.625rem -0.25rem 1rem;
+  }
 
-          &__list-item {
-            list-style-type: none;
-            font-size: 1.25rem;
-            display: inline;
-            padding: 0.75rem;
-          }
-          &__links {
-            text-decoration: none;
-            color: inherit;
-            display: inline-block;
+  &__title-link,
+  &__links
+   {
+    text-decoration: none;
+    color: inherit;
+  }
+          
+  &__title {
+    display: inline-block;
+  }
 
-          &:hover {
-            color: $nitro-blue;
-          }
+  &__nav-list {
+    float: right;
+    margin: 2.5rem 1rem 0 0;
+  }
 
-          &--current {
-            color: $nitro-blue;
-          }
-          }  
-    }
+  &__list-item {
+    list-style-type: none;
+    font-size: 1.25rem;
+    display: inline;
+    padding: 0.75rem;
+  }
+  &__links {
+  &:hover,
+  &--current {
+    color: $nitro-blue;
+  }
+  }  
+}

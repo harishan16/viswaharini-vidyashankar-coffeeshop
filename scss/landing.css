@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-/* html{
-  font-size: 62.5%;
-
-} */
-/* body {
-  font-size: 1.6rem;
-} */
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -20,18 +13,20 @@ h1,
 h2 {
   font-size: 3rem;
   font-weight: 300;
-  margin: 0;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 300;
-  margin: 0;
 }
 
 p {
   font-size: 1.125rem;
   font-weight: 400;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }
 
 .item__pricing, .sub-item__pricing {
@@ -89,12 +84,10 @@ p {
 .navigation__logo {
   width: 3.125rem;
   margin: 1rem 0.625rem -0.25rem 1rem;
-  display: inline;
 }
-.navigation__title-link {
+.navigation__title-link, .navigation__links {
   text-decoration: none;
   color: inherit;
-  display: inline;
 }
 .navigation__title {
   display: inline-block;
@@ -102,7 +95,6 @@ p {
 .navigation__nav-list {
   float: right;
   margin: 2.5rem 1rem 0 0;
-  display: inline;
 }
 .navigation__list-item {
   list-style-type: none;
@@ -110,15 +102,7 @@ p {
   display: inline;
   padding: 0.75rem;
 }
-.navigation__links {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-}
-.navigation__links:hover {
-  color: #5bacc3;
-}
-.navigation__links--current {
+.navigation__links:hover, .navigation__links--current {
   color: #5bacc3;
 }
 
@@ -206,6 +190,7 @@ p {
 }
 .item__name-wrapper {
   text-align: left;
+  width: 10rem;
 }
 .item__name {
   font-size: 1.5rem;

@@ -12,10 +12,12 @@
   &__column-one {
     width: 60%;
   }
+
   &__definition {
     width: 52%;
     letter-spacing: -0.03rem;
   }
+
   &__image {
     height: 27rem;
   }
@@ -30,9 +32,11 @@
   &__title {
     padding: 2.5rem 0;
   }
+
   &__container {
     @include flex-box;
   }
+
   &__button--view-all {
     margin: 2.5rem 0;
   }
@@ -64,6 +68,7 @@
 
   &__name-wrapper {
   text-align: left;
+  width: 10rem;
   }
 
   &__name{
@@ -85,6 +90,7 @@
   @include flex-box;
   margin: 6.25rem 0;
 }
+
 .sourcing-info {
   width: 52%;
 
@@ -102,11 +108,9 @@
 }
 
 .sourcing-info__icon {
-  width: 3.125rem;
-  height: 3.125rem;
+    width: 3.125rem;
+    height: 3.125rem;
 }
-
-
 
 .sourcing-image {
     background-image: url(../assets/images/coldbrewbackground.png);
@@ -150,9 +154,9 @@
     padding: 1.875rem;
     margin: 0;
 
-    &--highlight {
-      font-weight: 700;
-    }
+  &--highlight {
+    font-weight: 700;
+  }
   }
 }
 
@@ -175,7 +179,7 @@
   &__right-icon {
     @extend .footer__left-icon;
     @include absolute-positioning (47%, 96%);
-}
+  }
 }
 
 .footer-column {
