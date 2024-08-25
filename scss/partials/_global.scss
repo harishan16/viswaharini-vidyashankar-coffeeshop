@@ -38,17 +38,39 @@
       margin: 0;
     }
 
-    .hero__button, .product-display__button, .sourcing-info__button {
+    .button-container {
       background-color: $nitro-blue;
-      width: 10rem;
-      padding: 1rem;
-      color: $white;
-      border: none;
-      @include font-size-weight (1.125rem, 400);
-      cursor: pointer;
       position: relative;
-    }
+      width: 8.75rem;
+      height: 2.7rem;
+  
+      &__button {
+        width: 100%;
+        text-align: center;
+        outline: 0.125rem solid $graphite;
+        outline-offset: -0.125rem;
+        @include absolute-positioning (-0.25rem, -0.25rem);
+      }
 
+      &--view-all {
+        margin:2.5rem auto;
+      }
+
+      &--shop-now {
+        margin: 1.6875rem 0 0 0.3125rem;
+      }
+
+      &--learn-more {
+        margin-top: 1.875rem;
+      }
+
+      &__title {
+        color: $white;
+        line-height: 2.7rem;
+        text-decoration: none;
+        font-size: 1.125rem;
+      }
+  }
     /* HEADER STYLING*/
     .header {
       background-color:$nitro-pink;

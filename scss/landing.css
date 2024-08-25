@@ -39,16 +39,35 @@ p {
   margin: 0;
 }
 
-.hero__button, .product-display__button, .sourcing-info__button {
+.button-container {
   background-color: #5bacc3;
-  width: 10rem;
-  padding: 1rem;
-  color: #fff;
-  border: none;
-  font-size: 1.125rem;
-  font-weight: 400;
-  cursor: pointer;
   position: relative;
+  width: 8.75rem;
+  height: 2.7rem;
+}
+.button-container__button {
+  width: 100%;
+  text-align: center;
+  outline: 0.125rem solid #393939;
+  outline-offset: -0.125rem;
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+}
+.button-container--view-all {
+  margin: 2.5rem auto;
+}
+.button-container--shop-now {
+  margin: 1.6875rem 0 0 0.3125rem;
+}
+.button-container--learn-more {
+  margin-top: 1.875rem;
+}
+.button-container__title {
+  color: #fff;
+  line-height: 2.7rem;
+  text-decoration: none;
+  font-size: 1.125rem;
 }
 
 /* HEADER STYLING*/
@@ -119,6 +138,7 @@ p {
 .product-display {
   background-color: #f7f7f7;
   text-align: center;
+  overflow: auto;
 }
 .product-display__title {
   padding: 2.5rem 0;
@@ -184,7 +204,7 @@ p {
   width: 65%;
   letter-spacing: -0.03rem;
 }
-.sourcing-info__icons-conatiner {
+.sourcing-info__icons-container {
   width: 65%;
   display: flex;
   justify-content: space-between;

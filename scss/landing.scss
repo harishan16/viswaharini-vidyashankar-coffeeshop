@@ -24,6 +24,7 @@
 .product-display {
   background-color: $light-gray;
   text-align: center;
+  overflow:auto;
 
   &__title {
     padding: 2.5rem 0;
@@ -91,7 +92,7 @@
     letter-spacing: -0.03rem;
   }
 
-  &__icons-conatiner {
+  &__icons-container {
     width: 65%;
     display: flex;
     justify-content: space-between;
