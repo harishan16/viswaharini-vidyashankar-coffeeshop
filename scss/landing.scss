@@ -1,6 +1,7 @@
 @use "./partials/global" as *;
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
+@use "./partials/animations" as *;
 
 /* HERO STYLING */
 .hero {
@@ -105,16 +106,34 @@
   height: 3.125rem;
 }
 
+
+
 .sourcing-image {
-  position: relative;
-
-  &__background {
+    background-image: url(../assets/images/coldbrewbackground.png);
+    background-position: center;
+    background-size: cover;
     width: 22rem;
-  }
+    height:22rem;
+    position:relative;
 
-  &__featured {
-    @include absolute-positioning (10%, 30%);
-  }
+    &__outline {
+      outline: 5px solid $nitro-blue;
+      width: 100%;
+      height: 100%;
+      outline-offset: -0.313rem;
+      @include absolute-positioning (-0.75rem, -0.75rem);
+    }
+
+    &__featured {
+      @include absolute-positioning (10%, 30%);
+      transition: transform 2s ease;
+    }
+
+    &:hover {
+      .sourcing-image__featured {
+           animation: rotate-animation 2s infinite linear;
+      }
+    }  
 }
 
 // DISCOUNT BANNER STYLING
@@ -122,6 +141,7 @@
   background-color: $graphite;
   width: 80%;
   margin: 10rem auto;
+  animation: color-change 2.5s ease-in-out infinite;
 
   &__text {
     text-align: center;
@@ -178,4 +198,6 @@
     width: 2.75rem;
   }
 }
+
+
 
